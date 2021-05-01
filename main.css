@@ -267,7 +267,6 @@ box-sizing: border-box;
 .footer-column1{
 height: 23%; 
 width: 225px; 
-transition: 1s;
 }
 .footer-column1-text{
 margin-top: 20px;
@@ -281,6 +280,7 @@ font-size: 16px;
 .footer-column1 a{
 color:#a7c353 ;
 text-decoration: none;
+transition: 1s;
 }
 .footer-column1-liner{
 border-bottom: 1px solid #999999;
