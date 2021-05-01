@@ -86,7 +86,6 @@ font-size: 13px;
 }
 .navigation a{
 color: #979797;
-transition: 0.5s;
 text-decoration: none;
 }
 a:hover{
