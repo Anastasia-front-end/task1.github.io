@@ -21,6 +21,7 @@ html,body{
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
     font-family: Georgia;
+    background-color: #939393;   
 }
 input::-ms-clear{display: none;}
 button{cursor: pointer;}
@@ -34,7 +35,8 @@ h1,h2,h3,h4,h5,h6{font-size:Georgia;}
 .main-container-dark{
 background-color: #313131;
 padding: 0 20px;
-width: 1000px;
+margin: auto;
+max-width: 1200px;
 box-sizing: border-box;
 }
 .main-container-light{ 
@@ -80,25 +82,31 @@ padding-top: 45px;
 padding-bottom: 20px;
 border-bottom: #a7c353;
 font-weight: normal;
-transition: 0.5s;
 font-size: 13px;
+}
 
-}
-.navigation a{
-color: #979797;
-text-decoration: none;
-}
-a:hover{
-color: white;
-}
-.navigation:hover{
+.box-right .navigation:nth-child(2){
 background-color:#a7c353;
 }
 
-                                              /* 2 container*/
+.navigation a{
+color: #979797;
+text-decoration: none;
+transition: 1s;
+}
+.box-right .white a{
+    color: white;
+}
+
+
+
+
+
+                                            /* 2 container*/
 .title{
 margin: 40px 80px;
 }
+
 .title h3{
 color: #666666;
 font-style: italic;
@@ -114,7 +122,17 @@ border-bottom: 1px solid #e2e2e2;
 
 .carousel-photo{
 max-height: 350px;
-max-width: 920px;
+} 
+
+#carouselExampleCaptions  > ol > li:hover{
+    background-color: aqua;  
+    transition: .5s;
+}
+
+#carouselExampleCaptions a:hover{
+width: 65px;
+height: 65px;
+transition: .5s;
 }
 .slide{
 height: 430px;
@@ -131,6 +149,7 @@ background-color: #a7c353;
 .carousel-indicators{
 bottom: -25px;
 }
+
 .carousel-control-prev, .carousel-control-next{
 background-color: black;
 border-radius: 50%;
@@ -445,33 +464,33 @@ align-items: center;
 
 
 
+    @media (min-width: 750px){
+        .menu-for-mobile{
+        display: none;
+        }
+        }
+    @media (min-width: 1201px){
+    .carousel-caption{
+        margin-left: 530px;
+    }
+    }
+    
 
-
-@media (max-width: 1700px){
+    @media (max-width: 1200px){
     .main-container-dark {
     max-width:1200px;
     }
-    .menu-for-mobile{
-    display: none;
-    }
+    
     }
 
     @media (max-width: 1200px){
     .main-container-dark {
         max-width:970px;
-    }
-    .menu-for-mobile{
-    display: none;
-    }
-        
+    }      
     }  
     @media (max-width: 992px){
         .main-container-dark { 
         max-width:750px;}
-        
-        .menu-for-mobile{
-        display: none;
-        }
         
         .menu .navigation{
         flex-wrap: wrap;
